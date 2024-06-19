@@ -78,7 +78,8 @@ public class ResolutionWithVariablesTest {
   /** Case (5 - i) * 8 where i = 2 */
   @Test
   public void shouldResolveFunction8() {
-    Function func = new Multiplication(new Subtraction(new Value(5d), new Variable("i", 2d)), new Value(8d));
+    Function func =
+        new Multiplication(new Subtraction(new Value(5d), new Variable("i", 2d)), new Value(8d));
     final Double result = func.solve();
 
     assertThat(result, equalTo(24d));

@@ -3,7 +3,7 @@ package edu.austral.ingsis.math.visitor;
 import edu.austral.ingsis.math.function.*;
 import edu.austral.ingsis.math.function.Module;
 
-public class PrintVisitor implements Visitor<String>{
+public class PrintVisitor implements Visitor<String> {
   @Override
   public String visit(Addition sum) {
     return sum.print();

@@ -3,7 +3,7 @@ package edu.austral.ingsis.math.visitor;
 import edu.austral.ingsis.math.function.*;
 import edu.austral.ingsis.math.function.Module;
 
-public class EvaluateVisitor implements Visitor<Double>{
+public class EvaluateVisitor implements Visitor<Double> {
   @Override
   public Double visit(Addition sum) {
     return sum.solve();

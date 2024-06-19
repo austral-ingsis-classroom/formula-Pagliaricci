@@ -23,7 +23,8 @@ public class ResolutionTest {
   /** Case 12 / 2 */
   @Test
   public void shouldResolveSimpleFunction2() {
-    Function function = new edu.austral.ingsis.math.function.Division(new Value(12d), new Value(2d));
+    Function function =
+        new edu.austral.ingsis.math.function.Division(new Value(12d), new Value(2d));
     final Double result = function.solve();
 
     assertThat(result, equalTo(6d));
@@ -37,7 +38,7 @@ public class ResolutionTest {
             new edu.austral.ingsis.math.function.Division(new Value(9d), new Value(2d)),
             new Value(3d));
 
-    final Double result =  function.solve();
+    final Double result = function.solve();
 
     assertThat(result, equalTo(13.5d));
   }
@@ -59,7 +60,9 @@ public class ResolutionTest {
   @Test
   public void shouldResolveSimpleFunction5() {
     Function function =
-        new edu.austral.ingsis.math.function.Power(new Value(36d), new edu.austral.ingsis.math.function.Division(new Value(1d), new Value(2d)));
+        new edu.austral.ingsis.math.function.Power(
+            new Value(36d),
+            new edu.austral.ingsis.math.function.Division(new Value(1d), new Value(2d)));
     final Double result = function.solve();
 
     assertThat(result, equalTo(6d));

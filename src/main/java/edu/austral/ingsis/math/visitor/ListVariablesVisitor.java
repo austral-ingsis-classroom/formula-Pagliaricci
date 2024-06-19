@@ -2,10 +2,9 @@ package edu.austral.ingsis.math.visitor;
 
 import edu.austral.ingsis.math.function.*;
 import edu.austral.ingsis.math.function.Module;
-
 import java.util.List;
 
-public class ListVariablesVisitor implements Visitor<List<String>>{
+public class ListVariablesVisitor implements Visitor<List<String>> {
 
   @Override
   public List<String> visit(Addition sum) {

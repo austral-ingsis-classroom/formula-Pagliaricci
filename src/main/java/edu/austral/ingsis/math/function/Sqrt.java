@@ -1,18 +1,18 @@
 package edu.austral.ingsis.math.function;
 
 import java.util.List;
-import java.util.Map;
 
-public class Sqrt implements Function{
+public class Sqrt implements Function {
 
-    private final Function function;
+  private final Function function;
 
-    public Sqrt(Function function){
-        this.function = function;
-    }
+  public Sqrt(Function function) {
+    this.function = function;
+  }
+
   @Override
   public Double solve() {
-        return Math.sqrt(function.solve());
+    return Math.sqrt(function.solve());
   }
 
   @Override
@@ -22,6 +22,6 @@ public class Sqrt implements Function{
 
   @Override
   public String print() {
-        return "sqrt(" + function.print() + ")";
+    return "sqrt(" + function.print() + ")";
   }
 }

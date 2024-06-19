@@ -3,21 +3,22 @@ package edu.austral.ingsis.math.function;
 import java.util.Collections;
 import java.util.List;
 
-public class Value implements Function{
+public class Value implements Function {
 
-    private final Double value;
+  private final Double value;
 
-    public Value(Double value){
-        this.value = value;
-    }
+  public Value(Double value) {
+    this.value = value;
+  }
+
   @Override
   public Double solve() {
-        return value;
+    return value;
   }
 
   @Override
   public List<String> getVariables() {
-      return Collections.emptyList();
+    return Collections.emptyList();
   }
 
   @Override
@@ -26,6 +27,5 @@ public class Value implements Function{
       return Integer.toString((int) value.doubleValue());
     }
     return Double.toString(value);
-
   }
 }

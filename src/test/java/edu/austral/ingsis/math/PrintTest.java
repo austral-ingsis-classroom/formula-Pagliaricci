@@ -25,7 +25,8 @@ public class PrintTest {
   /** Case 12 / 2 */
   @Test
   public void shouldPrintFunction2() {
-    Function function = new edu.austral.ingsis.math.function.Division(new Value(12.), new Value(2.));
+    Function function =
+        new edu.austral.ingsis.math.function.Division(new Value(12.), new Value(2.));
 
     final String expected = "(12 / 2)";
     final String result = function.print();
@@ -52,7 +53,8 @@ public class PrintTest {
   public void shouldPrintFunction4() {
     Function function =
         new edu.austral.ingsis.math.function.Power(
-            new edu.austral.ingsis.math.function.Division(new Value(27.), new Value(6.)), new Value(2.));
+            new edu.austral.ingsis.math.function.Division(new Value(27.), new Value(6.)),
+            new Value(2.));
 
     final String expected = "((27 / 6) ^ 2)";
     final String result = function.print();
@@ -63,7 +65,9 @@ public class PrintTest {
   /** Case |value| - 8 */
   @Test
   public void shouldPrintFunction6() {
-    Function function = new edu.austral.ingsis.math.function.Subtraction(new Module(new Variable("value", 0.)), new Value(8.));
+    Function function =
+        new edu.austral.ingsis.math.function.Subtraction(
+            new Module(new Variable("value", 0.)), new Value(8.));
 
     final String expected = "(|value| - 8)";
     final String result = function.print();
@@ -74,7 +78,9 @@ public class PrintTest {
   /** Case |value| - 8 */
   @Test
   public void shouldPrintFunction7() {
-    Function function = new edu.austral.ingsis.math.function.Subtraction(new Module(new Variable("value", 0.)), new Value(8.));
+    Function function =
+        new edu.austral.ingsis.math.function.Subtraction(
+            new Module(new Variable("value", 0.)), new Value(8.));
     final String expected = "(|value| - 8)";
     final String result = function.print();
 

@@ -1,14 +1,12 @@
 package edu.austral.ingsis.math.function;
 
 import java.util.List;
-import java.util.Map;
 
 public interface Function {
 
-      Double solve();
+  Double solve();
 
-      List<String> getVariables();
+  List<String> getVariables();
 
-      String print();
-
+  String print();
 }

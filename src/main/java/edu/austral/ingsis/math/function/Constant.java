@@ -1,20 +1,20 @@
 package edu.austral.ingsis.math.function;
 
 import java.util.List;
-import java.util.Map;
 
-public class Constant implements Function{
+public class Constant implements Function {
 
-    private final Double value;
-    private final String name;
+  private final Double value;
+  private final String name;
 
-    public Constant(Double value, String name){
-        this.name = name;
-        this.value = value;
-    }
+  public Constant(Double value, String name) {
+    this.name = name;
+    this.value = value;
+  }
+
   @Override
   public Double solve() {
-        return value;
+    return value;
   }
 
   @Override
@@ -24,6 +24,6 @@ public class Constant implements Function{
 
   @Override
   public String print() {
-        return name;
+    return name;
   }
 }

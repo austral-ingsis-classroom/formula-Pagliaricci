@@ -1,7 +1,7 @@
-//package edu.austral.ingsis.math;
+// package edu.austral.ingsis.math;
 //
-//public class MathEngine {
+// public class MathEngine {
 //
 //
 //  public  Function formulateFunction(String function) {
-//}
+// }

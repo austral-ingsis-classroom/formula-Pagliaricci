@@ -1,0 +1,49 @@
+@startuml
+
+
+
+interface Function {
+   +Double solve();
+   +List<String> getVariables();
+   +String print();
+}
+class Addition implements Function {
+   -Function left;
+   -Function right;
+}
+class Constant implements Function {
+   -Double value;
+   -String name;
+}
+class Division implements Function {
+   -Function left;
+   -Function right;
+}
+class Multiplication implements Function {
+   -Function left;
+   -Function right;
+}
+class Subtraction implements Function {
+   -Function left;
+   -Function right;
+}
+class Module implements Function {
+   -Function fun;
+}
+class Power implements Function {
+   -Function base;
+   -Function exponent;
+}
+class Sqrt implements Function {
+   -Function fun;
+}
+class Value implements Function {
+   -Double value;
+}
+class Variable implements Function {
+   -String name;
+   -Double value;
+}
+
+
+@enduml

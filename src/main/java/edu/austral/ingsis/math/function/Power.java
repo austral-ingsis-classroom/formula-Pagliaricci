@@ -12,6 +12,7 @@ public class Power implements Function {
     this.function2 = function2;
   }
 
+
   @Override
   public Double solve() {
     return Math.pow(function1.solve(), function2.solve());

@@ -1,0 +1,56 @@
+@startuml
+interface Visitor<T> {
+   +T visit(Function);
+
+}
+class EvaluateVisitor implements Visitor{
+   +Double visit(Function);
+
+}
+class ListVariablesVisitor implements Visitor{
+   +List<String> visit(Function);
+
+}
+class PrintVisitor implements Visitor{
+   +String visit(Function);
+}
+interface Function {
+   +T accept(Visitor<T>);
+   +solve();
+    +getVariables();
+    +toString();
+}
+class Constant implements Function {
+   +T accept(Visitor<T>);
+}
+class Variable implements Function {
+   +T accept(Visitor<T>);
+}
+class Addition implements Function {
+   +T accept(Visitor<T>);
+}
+class Subtraction implements Function {
+   +T accept(Visitor<T>);
+}
+class Multiplication implements Function {
+   +T accept(Visitor<T>);
+}
+class Division implements Function {
+   +T accept(Visitor<T>);
+}
+class Module implements Function {
+   +T accept(Visitor<T>);
+}
+class Sqrt implements Function {
+   +T accept(Visitor<T>);
+}
+class Value implements Function {
+   +T accept(Visitor<T>);
+}
+class Power implements Function {
+   +T accept(Visitor<T>);
+}
+Function --> Visitor
+
+
+@enduml
